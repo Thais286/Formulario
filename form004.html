@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.pho" method="get" autocomplete="on">
+
+        <fieldset><!--Grupo de campos-->
+
+            <legend>Dados péssoais</legend><!-- faz um quadrado com os campos pessoais excrito Dados Pessoais em cima-->
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            
+                <p>
+            <label for="iemail">Email</label>
+            <input type="iemail" name="email" id="iemail" required autocomplete="email">
+                </p>
+            
+                <p> <label for="itelefone">Telefone</label>
+                
+                <input type="tel" name="telefone" id="itelefone" autocomplete="tel"  max="13" pattern="!\({0-9}{2}\){0-9}{4,5}-{0-9}{4}$" placeholder="(xx) xxxxx-xx"></p>
+            
+                <!--Estudar expressões regulares
+                
+                início !   final $
+            
+                \(     \) significa abrir e fechar parenteses ex:(31) vc faz \({0-9}{2}\)
+            
+                {2} pq vai dois digitos 31
+                
+                {0-9} ou /d significa digitos
+            
+                {4,5} que vai de 4 a 5 digitos primeiro
+                
+                - e depois dere repete de novo ou muda a quantidade de digitos
+                
+                ex: 99713-8650-->
+        </fieldset>
+
+    <p><input type="submit" value="Enviar">
+    
+    <input type="reset" value="Limpar"></p>
+
+    </form>
+</body>
+</html>
