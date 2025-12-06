@@ -12,9 +12,15 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form action="cadastro.php"> <!--input text = caixa para digitar o texto , c adastro php é para onde vão enviar os dados para uma linguagem o php
+    <form action="cadastro.php" method="POST" autocomplete="on"> <!--input text = caixa para digitar o texto , c adastro php é para onde vão enviar os dados para uma linguagem o php é necessário usar outra linguagem
         
-    Se vc quiser desligar a sugestão de texto de preenchimento é só colocar <form autocomplete="off"> --->
+    Se vc quiser desligar a sugestão de texto de preenchimento é só colocar <form autocomplete="off">
+    Para religar  autocomplete on
+        
+    method POST vai esconder os seus dados nome sobrenome senha... ,ele é usado para não ficar visível no link os dados, vc só vai ver se for em inspencionar ele envia informações
+    
+    
+    o GET é usado para buscar informações o formulário pode ter até 3000 letras--->
 
         <p><label for="inome">Nome:</label>
             <input type="text" name="nome" id="inome" </p>

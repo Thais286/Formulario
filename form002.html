@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on"></form>
+
+    <p><label for="iudu">Usuário</label>
+
+    <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username">
+    </p> <!-- required / mostra que é obrigatório colocar o dado  
+    
+    minlength / o nome tem que ter no minimo 5 letras
+    
+    maxlength / o nome tem que ter no máximo 15 letras
+    
+    size / que o tamanho da caixa é para mostrar 10 caracteres por vez ,mas cabe muito mais
+    
+    placeholder / local para vc dar dicas para o usuário dentro da caixa-->
+
+    <p><label for="isen">Senha</label></p>
+    <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="15" placeholder="mínimo 8" autocomplete="current-password">
+    <!--password / serve para esconder a senha aparece ... envez da senha
+    
+    autocomplet current password / senha atual-->
+
+    <p><input type="submit" value="Enviar"></p>
+
+    <p><input type="reset" value="Limpar"></p>
+</body>
+</html>
