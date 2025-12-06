@@ -12,10 +12,15 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form> <!--input text = caixa para digitar o texto-->
-        <p>Nome:<input type="text" name="nome" id="nome" </p>
+    <form action="cadastro.php"> <!--input text = caixa para digitar o texto , c adastro php é para onde vão enviar os dados para uma linguagem o php
+        
+    Se vc quiser desligar a sugestão de texto de preenchimento é só colocar <form autocomplete="off"> --->
 
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" </p>
+
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
 
         <p><input type="submit" value="Enviar"></p> <!--caixa para clicar e enviar-->
     </form>
